@@ -1,7 +1,8 @@
 const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
-const BundleAnalyzerPlugin =
-  require('webpack-bundle-analyzer').BundleAnalyzerPlugin
+const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin
+const CompressionPlugin = require("compression-webpack-plugin")
+
 
 module.exports = {
   mode: 'development',
@@ -54,5 +55,6 @@ module.exports = {
       template: 'src/template.html',
     }),
     new BundleAnalyzerPlugin(),
+    new CompressionPlugin(),
   ],
 }
