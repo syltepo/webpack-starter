@@ -33,3 +33,11 @@ The demo app is a very simple Joke generator. Replace with your own code and ins
 - index.js (main javascript)
 - template.html (template)
 - styles/main.scss (styles)
+
+## Ajout de la Dockerisation
+
+- Dockerfile et .dockerignore à la racine du projet
+- Build de l'image docker avec # docker build . -t my-app:[tagname]
+- Docker run ou utilisation de dockerdesktop
+
+
